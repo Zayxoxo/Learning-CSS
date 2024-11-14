@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.container-main {
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-header {
+  padding: 2em;
+}
+
+.container-header h1 {
+  font-size: 2.5em;
+  color: black;
+  margin-bottom: 1em;
+}
+
+.container-header p {
+  font-size: 1.2em;
+  margin-top: 1em;
+  line-height: 1.5em;
+}
+
+.colored {
+  color: rgb(7, 206, 130);
+}
+
+.grey-area {
+  background-color: #555;
+  height: 2.5em;
+}
+
+.yellow-area {
+  background-color: rgb(252, 229, 24);
+  padding: 0.5em;
+  display: inline-block;
+}
+
+.container-two p {
+  font-size: 1em;
+  line-height: 1.8em;
+  color: #333;
+  text-align: justify;
+  padding: 2em;
+}
+
+/* Mobile Responsiveness*/
+
+@media (max-width: 600px) {
+  .container-main {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .container-header h1 {
+    font-size: 2em;
+  }
+
+  .container-header p {
+    font-size: 1em;
+  }
+
+  .grey-area {
+    height: 1.5em;
+    margin: 1.5em 0;
+  }
+
+  .yellow-area {
+    font-size: 0.9em;
+    padding: 0.5rem;
+  }
+
+  .container-two p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 1.5em;
+  }
+}
+
+/* Tablet Responsiveness */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container-header h1 {
+    font-size: 2.2em;
+  }
+
+  .container-header p,
+  .container-two p {
+    font-size: 1.1em;
+  }
+
+  .container-main {
+    padding: 1.5rem;
+  }
+
+  .grey-area {
+    height: 2em;
+  }
+
+  .yellow-area {
+    font-size: 1em;
+    padding: 0.6rem;
+  }
+}
