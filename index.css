@@ -15,13 +15,13 @@ body {
 }
 
 .tabs-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 20px;
   width: 80%;
   max-width: 900px;
   margin: auto;
-  justify-content: center;
+  justify-items: center;
 }
 
 .tab {
@@ -43,22 +43,30 @@ body {
 }
 
 #assignment1 {
-  background-color: #1a1a2e; /* Dark blue */
+  background-color: #1a1a2e;
 }
 
 #assignment2 {
-  background-color: #b8336a; /* Magenta */
+  background-color: #b8336a;
 }
 
 #assignment3 {
-  background-color: #16c79a; /* Teal */
+  background-color: #16c79a;
 }
 
 #assignment4 {
-  background-color: #a17f1e; /* Gold */
+  background-color: #a17f1e;
 }
 
-/* Hover*/
+#assignment5 {
+  background-color: #ff758f;
+}
+
+#assignment6 {
+  background-color: #ffdfba;
+}
+
+/* Hover */
 .tab:hover {
   transform: translateY(-5px);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
@@ -78,6 +86,9 @@ body {
 
 /* Responsiveness for smaller screens */
 @media (max-width: 768px) {
+  .tabs-container {
+    grid-template-columns: 1fr; 
+  }
   .tab {
     width: 150px;
     height: 80px;
