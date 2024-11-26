@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+
+  background-color: #f5f5f5;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.pusher-header {
+  width: 100%;
+
+  background-color: white;
+
+  padding: 1rem 2rem;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+
+  margin-top: 2rem;
+}
+.pusher-header p{
+  width: 476px;
+  height: 40px;
+  top: 28px;
+  left: 924px;
+  gap: 2px;
+  justify-content: space-between;
+
+}
+
+.pusher-header button {
+  padding: 0.5rem 1rem;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  max-width: 900px;
+
+  background-color: #fff;
+
+  padding: 2rem;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  gap: 2rem;
+}
+
+.container1,
+.divider {
+  flex: 1;
+}
+
+.container1 {
+  padding: 1.5rem;
+
+  line-height: 2rem;
+}
+
+.divider {
+  background-color: #008cff;
+
+  color: white;
+
+  padding: 2rem;
+
+  border-radius: 8px;
+
+  line-height: 2;
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+
+  padding: 0.8rem;
+
+  margin-bottom: 1rem;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+}
+
+.info {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 1rem;
+}
+
+.info input {
+  width: 100%;
+}
+
+.wp-button {
+  padding: 1rem;
+
+  background-color: #00aab6;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  width: 100%;
+
+  font-size: 1.1rem;
+}
+
+.wp-button:hover {
+  background-color: #008a93;
+}
+
+.divider ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 1.5rem 0;
+}
+
+.divider ul li {
+  margin-bottom: 1rem;
+}
+
+.divider a {
+  color: white;
+
+  text-decoration: underline;
+}
+
+.divider .italic {
+  font-style: italic;
+}
+
+.stripe-button {
+  background-color: rgba(129, 127, 127, 0.842);
+
+  color: white;
+
+  padding: 0.5rem;
+
+  border-radius: 1rem;
+
+  margin-left: 5rem;
+}
+
+span {
+  color: grey;
+}
+/* Responsive design for desktop */
+@media (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+    padding: 3rem;
+  }
+
+  .pusher-header {
+    padding: 2rem 3rem;
+  }
+
+  .divider {
+    padding: 2.5rem;
+  }
+
+  .wp-button, .stripe-button {
+    width: auto;
+    max-width: 300px;
+  }
+
+  .divider h2, .divider h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .divider {
+    margin-top: 1.5rem;
+  }
+
+  .pusher-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wp-button, .stripe-button {
+    width: auto;
+    margin-top: 1rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .divider {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .pusher-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wp-button, .stripe-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .container1 input {
+    font-size: 1rem;
+  }
+
+  .divider h2, .divider h3 {
+    font-size: 1.3rem;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .info input {
+    width: 100%;
+  }
+}
+
+/* Smaller screen (below 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .pusher-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .wp-button, .stripe-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .stripe-button {
+    margin-left: 0;
+  }
+
+  .container1 input {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .divider {
+    padding: 1rem;
+  }
+
+  .info input {
+    padding: 1rem;
+  }
+
+  .divider h4 {
+    font-size: 1rem;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .divider ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .divider p {
+    font-size: 1rem;
+  }
+
+  .stripe-button {
+    font-size: 0.9rem;
+  }
+
+  .italic {
+    font-size: 1rem;
+  }
+}
